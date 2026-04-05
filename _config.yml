@@ -1,0 +1,33 @@
+title: "부자들의 경제철학"
+description: "부의 마인드셋과 경제 전략을 탐구하는 전문 플랫폼"
+baseurl: ""
+url: "https://digiahn.github.io"
+
+author:
+  name: "DigiAHN"
+  youtube: "https://www.youtube.com/channel/UCFAWKsm-3cUKvwSoph9vP0g"
+  github: "https://github.com/digiahn"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "DigiAHN"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
