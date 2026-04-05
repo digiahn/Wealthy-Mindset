@@ -38,4 +38,3 @@ bundle exec jekyll serve
 ---
 
 © 2025 DigiAHN · ARGON INTELLIGENCE
-# Wealthy-Mindset
