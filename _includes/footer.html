@@ -1,48 +1,45 @@
 <footer class="footer">
-  <div class="footer__inner">
+  <div class="footer__grid">
     <div>
       <div class="footer__brand-name">부자들의 경제철학</div>
-      <div style="font-size:0.65rem;letter-spacing:0.15em;color:var(--gold);text-transform:uppercase;">Wealthy Mindset Platform</div>
+      <div class="footer__brand-sub">Wealthy Mindset Platform</div>
       <p class="footer__brand-desc">
-        부의 본질을 탐구하고 경제적 자유를 향한 사고방식을 공유합니다.<br>
-        성공한 사람들의 돈 버는 방법과 경제 철학을 분석하여<br>
+        부의 본질을 탐구하고 경제적 자유를 향한 사고방식을 공유합니다.
+        성공한 부자들의 투자 원칙과 경제 철학을 심층 분석하여
         여러분의 재정적 여정을 안내합니다.
       </p>
     </div>
-
     <div>
       <div class="footer__col-title">카테고리</div>
       <ul class="footer__links">
-        <li><a href="{{ '/wealth-strategy/' | relative_url }}">부의 전략</a></li>
-        <li><a href="{{ '/mindset/' | relative_url }}">마인드셋</a></li>
-        <li><a href="{{ '/investment/' | relative_url }}">투자철학</a></li>
-        <li><a href="{{ '/success-habits/' | relative_url }}">성공 습관</a></li>
+        <li><a href="{{ '/wealth-strategy/' | relative_url }}">🏛️ 부의 전략</a></li>
+        <li><a href="{{ '/mindset/' | relative_url }}">🧠 마인드셋</a></li>
+        <li><a href="{{ '/investment/' | relative_url }}">📈 투자철학</a></li>
+        <li><a href="{{ '/success-habits/' | relative_url }}">⚡ 성공 습관</a></li>
+        <li><a href="{{ '/people/' | relative_url }}">👤 인물 탐구</a></li>
       </ul>
     </div>
-
     <div>
       <div class="footer__col-title">채널</div>
       <ul class="footer__links">
-        <li>
-          <a href="{{ site.author.youtube }}" target="_blank" rel="noopener">
-            📺 디지안 월드 (YouTube)
-          </a>
-        </li>
-        <li>
-          <a href="{{ site.author.github }}" target="_blank" rel="noopener">
-            🐙 GitHub
-          </a>
-        </li>
+        <li><a href="{{ site.author.youtube }}" target="_blank" rel="noopener">📺 디지안 월드 YouTube</a></li>
+        <li><a href="{{ site.author.naver }}" target="_blank" rel="noopener">📝 네이버 블로그</a></li>
+        <li><a href="{{ site.author.github }}" target="_blank" rel="noopener">🐙 GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">탐구 인물</div>
+      <ul class="footer__links">
+        <li><a href="{{ '/people/' | relative_url }}">워런 버핏</a></li>
+        <li><a href="{{ '/people/' | relative_url }}">찰리 멍거</a></li>
+        <li><a href="{{ '/people/' | relative_url }}">레이 달리오</a></li>
+        <li><a href="{{ '/people/' | relative_url }}">피터 린치</a></li>
+        <li><a href="{{ '/people/' | relative_url }}">하워드 막스</a></li>
       </ul>
     </div>
   </div>
-
   <div class="footer__bottom">
-    <div class="footer__copy">
-      &copy; {{ 'now' | date: "%Y" }} DigiAHN · 부자들의 경제철학 · All rights reserved.
-    </div>
-    <div class="footer__gold-mark">
-      "부의 사고는 습관에서 시작된다"
-    </div>
+    <div class="footer__copy">© {{ 'now' | date: "%Y" }} DigiAHN · 부자들의 경제철학 · All rights reserved.</div>
+    <div class="footer__motto">"부의 사고는 습관에서 시작된다"</div>
   </div>
 </footer>

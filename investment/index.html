@@ -4,29 +4,23 @@ title: "투자철학"
 description: "세계 최고 투자자들의 원칙과 프레임워크"
 permalink: /investment/
 ---
-
-<div style="padding: calc(var(--nav-h) + 4rem) 0 4rem; background: var(--black); border-bottom: 1px solid rgba(201,168,76,0.1);">
+<div style="padding:calc(var(--nav-h) + 4rem) 0 3.5rem;background:var(--black);border-bottom:1px solid rgba(201,168,76,.08);">
   <div class="container">
-    <div class="section__eyebrow" style="justify-content:flex-start; margin-bottom:1rem;">Investment Philosophy</div>
-    <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--ivory);margin-bottom:1rem;">
-      📈 투자 <em style="font-style:italic;color:var(--gold);">철학</em>
-    </h1>
-    <p style="color:var(--text-muted);font-size:1rem;max-width:500px;line-height:1.8;">
-      세계 최고의 투자자들이 시장을 바라보는 원칙과 프레임워크를 분석합니다.
-    </p>
+    <div class="sec-eye" style="justify-content:flex-start;margin-bottom:.75rem;">Category</div>
+    <h1 style="font-family:var(--font-head);font-size:clamp(2.2rem,5vw,4rem);font-weight:900;color:var(--ivory);margin-bottom:.75rem;">📈 <em style="font-style:italic;color:var(--gold);">투자철학</em></h1>
+    <p style="color:var(--text-muted);font-size:.95rem;max-width:500px;line-height:1.85;">세계 최고의 투자자들이 시장을 바라보는 원칙과 프레임워크를 분석합니다.</p>
   </div>
 </div>
-
-<section class="section section--darker">
+<section class="section s-dark">
   <div class="container">
     <div class="post-grid">
-      {% assign cat_posts = site.posts | where: "category", "투자철학" %}
-      {% for post in cat_posts %}
+      {% assign posts = site.posts | where: "category", "투자철학" %}
+      {% for post in posts %}
       <a href="{{ post.url | relative_url }}" class="post-card">
-        <div class="post-card__tag">{{ post.category }}</div>
+        <div class="post-card__cat">{{ post.category }}</div>
         <div class="post-card__title">{{ post.title }}</div>
-        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-        <div class="post-card__meta"><span>{{ post.date | date: "%Y.%m.%d" }}</span></div>
+        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 95 }}</p>
+        <div class="post-card__meta">{{ post.date | date: "%Y.%m.%d" }}</div>
       </a>
       {% endfor %}
     </div>

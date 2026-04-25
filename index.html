@@ -1,192 +1,291 @@
 ---
 layout: default
 title: "부자들의 경제철학"
-description: "부의 마인드셋과 경제 전략을 탐구하는 전문 플랫폼. 성공한 부자들의 돈 버는 방법과 경제 철학을 분석합니다."
+description: "성공한 부자들의 돈 버는 방법과 경제 철학을 심층 분석하는 전문 플랫폼. 워런 버핏, 찰리 멍거, 레이 달리오의 투자 원칙을 탐구합니다."
 ---
 
-<!-- ═══════════════ HERO ═══════════════ -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero__bg"></div>
-  <div class="hero__grid"></div>
-  <div class="hero__deco">
-    <span class="hero__deco-symbol">富</span>
-  </div>
+  <div class="hero__bg-grid"></div>
+  <div class="hero__bg-glow"></div>
   <div class="hero__inner">
-    <div class="hero__eyebrow">Wealthy Mindset Platform</div>
-    <h1 class="hero__title">
-      부자들의<br><em>경제철학</em>
-    </h1>
-    <p class="hero__desc">
-      성공한 부자들이 돈을 바라보는 방식은 다릅니다.<br>
-      그들의 사고방식, 투자 원칙, 그리고 경제적 자유를 향한<br>
-      전략을 심층 분석합니다.
-    </p>
-    <div class="hero__cta">
-      <a href="#latest" class="btn btn--gold">최신 콘텐츠 보기</a>
-      <a href="{{ site.author.youtube }}" class="btn btn--outline" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2C19.6 4 12 4 12 4S4.4 4 2.5 4.2c-1 .3-1.7 1-2 2C.2 8 0 12 0 12s.2 4 .5 5.8c.3 1 1 1.7 2 2C4.4 20 12 20 12 20s7.6 0 9.5-.2c1-.3 1.7-1 2-2 .3-1.8.5-5.8.5-5.8s-.2-4-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-        디지안 월드
-      </a>
+    <div>
+      <div class="hero__eyebrow fade-up">Wealthy Mindset Platform</div>
+      <h1 class="hero__title fade-up fade-up-1">
+        부자들의<br><em>경제철학</em>
+      </h1>
+      <p class="hero__desc fade-up fade-up-2">
+        억만장자들의 사고방식은 다릅니다.<br>
+        워런 버핏, 찰리 멍거, 레이 달리오, 피터 린치…<br>
+        그들이 부를 바라보는 방식을 심층 분석합니다.
+      </p>
+      <div class="hero__btns fade-up fade-up-3">
+        <a href="#latest" class="btn btn--gold">콘텐츠 탐구하기</a>
+        <a href="{{ site.author.youtube }}" class="btn btn--ghost" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2C19.6 4 12 4 12 4S4.4 4 2.5 4.2c-1 .3-1.7 1-2 2C.2 8 0 12 0 12s.2 4 .5 5.8c.3 1 1 1.7 2 2C4.4 20 12 20 12 20s7.6 0 9.5-.2c1-.3 1.7-1 2-2 .3-1.8.5-5.8.5-5.8s-.2-4-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          디지안 월드
+        </a>
+      </div>
+      <div class="hero__stats fade-up fade-up-4">
+        <div><div class="hero__stat-n">12+</div><div class="hero__stat-l">심층 분석</div></div>
+        <div><div class="hero__stat-n">5</div><div class="hero__stat-l">전문 카테고리</div></div>
+        <div><div class="hero__stat-n">10+</div><div class="hero__stat-l">탐구 인물</div></div>
+      </div>
     </div>
-    <div class="hero__stat-row">
-      <div>
-        <div class="hero__stat-num">4</div>
-        <div class="hero__stat-label">전문 카테고리</div>
-      </div>
-      <div>
-        <div class="hero__stat-num">∞</div>
-        <div class="hero__stat-label">부의 인사이트</div>
-      </div>
-      <div>
-        <div class="hero__stat-num">1%</div>
-        <div class="hero__stat-label">사고방식의 차이</div>
+    <div class="hero__visual">
+      <div class="hero__ring">
+        <div class="hero__ring-orbit">
+          <div class="hero__ring-dot"></div>
+        </div>
+        <div class="hero__ring-char">富</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ TICKER ═══════════════ -->
+<!-- TICKER -->
 <div class="ticker">
-  <div class="ticker__inner">
-    <!-- Duplicated for seamless loop -->
-    {% assign ticker_items = "워런 버핏의 복리 원칙|찰리 멍거의 정신 모델|레이 달리오의 원칙|엘론 머스크의 제1원칙 사고|제프 베이조스의 장기적 관점|손정의의 300년 비전|조지 소로스의 반재귀성 이론|피터 린치의 기업 분석법|짐 로저스의 글로벌 투자론|하워드 막스의 2차적 사고" | split: "|" %}
-    {% for item in ticker_items %}
-      <span class="ticker__item">
-        <span class="ticker__label">富</span>
-        {{ item }}
-        &nbsp;&nbsp;·&nbsp;&nbsp;
-      </span>
-    {% endfor %}
-    {% for item in ticker_items %}
-      <span class="ticker__item">
-        <span class="ticker__label">富</span>
-        {{ item }}
-        &nbsp;&nbsp;·&nbsp;&nbsp;
-      </span>
-    {% endfor %}
+  <div class="ticker__track">
+    {% assign words = "워런 버핏의 복리 원칙|찰리 멍거의 정신 모델|레이 달리오의 원칙|피터 린치의 10배 주식|하워드 막스의 2차 사고|짐 로저스의 역발상|조지 소로스의 반재귀성|나심 탈레브의 블랙스완|로버트 기요사키의 부자 아빠|존 보글의 인덱스 철학|벤저민 그레이엄의 안전마진|필립 피셔의 성장주 투자" | split: "|" %}
+    {% for w in words %}<span class="ticker__item"><span class="ticker__mark">富</span>{{ w }}&nbsp;&nbsp;·&nbsp;&nbsp;</span>{% endfor %}
+    {% for w in words %}<span class="ticker__item"><span class="ticker__mark">富</span>{{ w }}&nbsp;&nbsp;·&nbsp;&nbsp;</span>{% endfor %}
   </div>
 </div>
 
-<!-- ═══════════════ CATEGORIES ═══════════════ -->
-<section class="section section--darker">
+<!-- CATEGORIES -->
+<section class="section s-black">
   <div class="container">
-    <div class="section__header">
-      <div class="section__eyebrow">Categories</div>
-      <h2 class="section__title">4가지 <em>핵심 영역</em></h2>
-      <p class="section__desc">부자들의 경제적 사고를 구성하는 네 가지 본질적 영역을 탐구합니다</p>
+    <div class="sec-head">
+      <div class="sec-eye">Categories</div>
+      <h2 class="sec-title">5가지 <em>탐구 영역</em></h2>
+      <p class="sec-desc">부자들의 경제적 사고를 구성하는 핵심 영역을 체계적으로 탐구합니다</p>
     </div>
-    <div class="categories">
+    <div class="cat-grid">
       <a href="{{ '/wealth-strategy/' | relative_url }}" class="cat-card">
-        <div class="cat-card__icon">🏛️</div>
         <div class="cat-card__num">01</div>
-        <div class="cat-card__title">부의 전략</div>
+        <div class="cat-card__icon">🏛️</div>
+        <div class="cat-card__name">부의 전략</div>
         <div class="cat-card__desc">억만장자들이 자산을 구축하는 시스템적 접근법과 장기 전략을 분석합니다.</div>
-        <div class="cat-card__arrow">탐구하기 →</div>
+        <div class="cat-card__count">→ 탐구하기</div>
       </a>
       <a href="{{ '/mindset/' | relative_url }}" class="cat-card">
-        <div class="cat-card__icon">🧠</div>
         <div class="cat-card__num">02</div>
-        <div class="cat-card__title">마인드셋</div>
+        <div class="cat-card__icon">🧠</div>
+        <div class="cat-card__name">마인드셋</div>
         <div class="cat-card__desc">부자와 그렇지 않은 사람을 가르는 사고방식의 근본적 차이를 탐구합니다.</div>
-        <div class="cat-card__arrow">탐구하기 →</div>
+        <div class="cat-card__count">→ 탐구하기</div>
       </a>
       <a href="{{ '/investment/' | relative_url }}" class="cat-card">
-        <div class="cat-card__icon">📈</div>
         <div class="cat-card__num">03</div>
-        <div class="cat-card__title">투자철학</div>
+        <div class="cat-card__icon">📈</div>
+        <div class="cat-card__name">투자철학</div>
         <div class="cat-card__desc">세계 최고의 투자자들이 시장을 바라보는 원칙과 프레임워크를 분석합니다.</div>
-        <div class="cat-card__arrow">탐구하기 →</div>
+        <div class="cat-card__count">→ 탐구하기</div>
       </a>
       <a href="{{ '/success-habits/' | relative_url }}" class="cat-card">
-        <div class="cat-card__icon">⚡</div>
         <div class="cat-card__num">04</div>
-        <div class="cat-card__title">성공 습관</div>
+        <div class="cat-card__icon">⚡</div>
+        <div class="cat-card__name">성공 습관</div>
         <div class="cat-card__desc">성공한 사람들의 일상 루틴과 습관 시스템이 어떻게 부를 창출하는지 살펴봅니다.</div>
-        <div class="cat-card__arrow">탐구하기 →</div>
+        <div class="cat-card__count">→ 탐구하기</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="cat-card">
+        <div class="cat-card__num">05</div>
+        <div class="cat-card__icon">👤</div>
+        <div class="cat-card__name">인물 탐구</div>
+        <div class="cat-card__desc">세계적 부자들의 생애, 철학, 그리고 성공의 비결을 인물 중심으로 심층 분석합니다.</div>
+        <div class="cat-card__count">→ 탐구하기</div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ QUOTE ═══════════════ -->
-<section class="quote-section section--dark">
-  <p class="quote-text">
-    "부자들은 돈이 그들을 위해 일하게 만든다.<br>
-    가난한 사람들은 돈을 위해 자신이 일한다."
-  </p>
-  <div class="quote-author">— Robert Kiyosaki, 부자 아빠 가난한 아빠</div>
-</section>
-
-<!-- ═══════════════ FEATURED ═══════════════ -->
-<section class="section section--darker" id="latest">
+<!-- KEY PRINCIPLES -->
+<section class="section s-dark2">
   <div class="container">
-    <div class="section__header">
-      <div class="section__eyebrow">Featured</div>
-      <h2 class="section__title">주목할 <em>인사이트</em></h2>
+    <div class="sec-head">
+      <div class="sec-eye">Core Principles</div>
+      <h2 class="sec-title">부자들의 <em>6가지 핵심 원칙</em></h2>
+      <p class="sec-desc">억만장자들이 공통으로 실천하는 경제철학의 정수</p>
     </div>
-
-    {% assign featured_posts = site.posts | limit: 1 %}
-    {% for post in featured_posts %}
-    <div class="featured">
-      <div class="featured__visual">
-        <div class="featured__visual-text">富</div>
-        <div class="featured__visual-badge">Featured</div>
+    <div class="principles">
+      <div class="principle-card">
+        <div class="principle-card__num">01</div>
+        <div class="principle-card__icon">⏳</div>
+        <div class="principle-card__title">복리의 마법</div>
+        <div class="principle-card__desc">시간과 인내를 무기로 삼는다. 워런 버핏의 재산 99%는 50세 이후에 만들어졌다.</div>
       </div>
-      <div class="featured__content">
-        <div class="featured__tag">{{ post.category | default: "인사이트" }}</div>
-        <h2 class="featured__title">{{ post.title }}</h2>
-        <p class="featured__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        <a href="{{ post.url | relative_url }}" class="btn btn--gold">전문 읽기</a>
-        <div class="featured__meta">
-          <span>{{ post.date | date: "%Y.%m.%d" }}</span>
-          <span class="featured__meta-dot">◆</span>
-          <span>{{ post.author | default: "DigiAHN" }}</span>
-        </div>
+      <div class="principle-card">
+        <div class="principle-card__num">02</div>
+        <div class="principle-card__icon">🛡️</div>
+        <div class="principle-card__title">리스크 관리 우선</div>
+        <div class="principle-card__desc">"절대 돈을 잃지 마라." 수익 극대화보다 손실 최소화를 먼저 생각한다.</div>
+      </div>
+      <div class="principle-card">
+        <div class="principle-card__num">03</div>
+        <div class="principle-card__icon">🔭</div>
+        <div class="principle-card__title">장기적 관점</div>
+        <div class="principle-card__desc">단기 소음에 흔들리지 않고 10년, 20년의 시각으로 의사결정을 내린다.</div>
+      </div>
+      <div class="principle-card">
+        <div class="principle-card__num">04</div>
+        <div class="principle-card__icon">📚</div>
+        <div class="principle-card__title">지속적 학습</div>
+        <div class="principle-card__desc">지식을 가장 수익률 높은 투자처로 본다. 부자의 88%는 매일 30분 이상 독서한다.</div>
+      </div>
+      <div class="principle-card">
+        <div class="principle-card__num">05</div>
+        <div class="principle-card__icon">💼</div>
+        <div class="principle-card__title">다중 소득원</div>
+        <div class="principle-card__desc">잠자는 동안에도 돈이 벌리는 시스템을 구축한다. 노동 소득에만 의존하지 않는다.</div>
+      </div>
+      <div class="principle-card">
+        <div class="principle-card__num">06</div>
+        <div class="principle-card__icon">🔄</div>
+        <div class="principle-card__title">역발상 사고</div>
+        <div class="principle-card__desc">대중이 공포에 떨 때 매수하고, 탐욕에 들뜰 때 매도한다. 군중의 반대편에 기회가 있다.</div>
       </div>
     </div>
-    {% endfor %}
   </div>
 </section>
 
-<!-- ═══════════════ LATEST POSTS ═══════════════ -->
-<section class="section section--dark">
+<!-- PEOPLE -->
+<section class="section s-black">
   <div class="container">
-    <div class="section__header">
-      <div class="section__eyebrow">Latest Posts</div>
-      <h2 class="section__title">최신 <em>콘텐츠</em></h2>
+    <div class="sec-head">
+      <div class="sec-eye">People</div>
+      <h2 class="sec-title">탐구하는 <em>부자들</em></h2>
+      <p class="sec-desc">그들의 철학 하나하나가 수십 억 달러의 지혜입니다</p>
+    </div>
+    <div class="people-grid">
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">🎩</div>
+        <div class="person-card__name">워런 버핏</div>
+        <div class="person-card__title">버크셔 해서웨이 · 가치투자</div>
+        <div class="person-card__desc">복리와 인내의 투자 철학. 오마하의 현인이 만든 부의 공식.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">🧐</div>
+        <div class="person-card__name">찰리 멍거</div>
+        <div class="person-card__title">버크셔 해서웨이 · 정신 모델</div>
+        <div class="person-card__desc">100개의 정신 모델로 세상을 꿰뚫는 다학문적 사고의 대가.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">⚖️</div>
+        <div class="person-card__name">레이 달리오</div>
+        <div class="person-card__title">브리지워터 · 원칙 투자</div>
+        <div class="person-card__desc">경제 기계의 작동 원리를 꿰뚫고 올웨더 포트폴리오를 설계한 거장.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">📊</div>
+        <div class="person-card__name">피터 린치</div>
+        <div class="person-card__title">피델리티 · 성장주 발굴</div>
+        <div class="person-card__desc">13년간 연 29% 수익. 일상에서 10배 주식을 찾는 방법을 가르쳐준 전설.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">🌊</div>
+        <div class="person-card__name">하워드 막스</div>
+        <div class="person-card__title">오크트리 캐피털 · 역발상</div>
+        <div class="person-card__desc">2차적 사고와 시장 사이클을 이해하는 역발상 투자의 철학자.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">🚀</div>
+        <div class="person-card__name">일론 머스크</div>
+        <div class="person-card__title">테슬라·스페이스X · 제1원칙</div>
+        <div class="person-card__desc">제1원칙 사고로 불가능을 가능으로 만드는 현대 최고의 혁신가.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">📖</div>
+        <div class="person-card__name">로버트 기요사키</div>
+        <div class="person-card__title">부자 아빠 · 자산vs부채</div>
+        <div class="person-card__desc">자산과 부채의 본질적 차이를 가르쳐준 금융교육의 혁명가.</div>
+      </a>
+      <a href="{{ '/people/' | relative_url }}" class="person-card">
+        <div class="person-card__avatar">🌍</div>
+        <div class="person-card__name">짐 로저스</div>
+        <div class="person-card__title">퀀텀펀드 · 글로벌 투자</div>
+        <div class="person-card__desc">300년을 내다보는 글로벌 시각과 원자재 투자의 대가.</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-sec">
+  <p class="quote-text">"부자들은 돈이 그들을 위해 일하게 만든다.<br>가난한 사람들은 돈을 위해 자신이 일한다."</p>
+  <div class="quote-author">— Robert Kiyosaki · 부자 아빠 가난한 아빠</div>
+</div>
+
+<!-- FEATURED + LATEST -->
+<section class="section s-dark" id="latest">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eye">Featured</div>
+      <h2 class="sec-title">주목할 <em>인사이트</em></h2>
+    </div>
+    {% assign fp = site.posts | first %}
+    {% if fp %}
+    <div class="featured" style="margin-bottom:1px;">
+      <div class="featured__vis">
+        <div class="featured__vis-char">富</div>
+        <div class="featured__badge">Featured</div>
+      </div>
+      <div class="featured__body">
+        <div class="featured__cat">{{ fp.category | default: "인사이트" }}</div>
+        <h2 class="featured__title">{{ fp.title }}</h2>
+        <p class="featured__excerpt">{{ fp.excerpt | strip_html | truncate: 160 }}</p>
+        <a href="{{ fp.url | relative_url }}" class="btn btn--gold">전문 읽기</a>
+        <div class="featured__meta">
+          <span>{{ fp.date | date: "%Y.%m.%d" }}</span>
+          <span>·</span>
+          <span>{{ fp.author | default: "DigiAHN" }}</span>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section s-black">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eye">Latest</div>
+      <h2 class="sec-title">최신 <em>콘텐츠</em></h2>
     </div>
     <div class="post-grid">
-      {% assign latest_posts = site.posts | offset: 1 | limit: 6 %}
-      {% for post in latest_posts %}
+      {% for post in site.posts offset:1 limit:9 %}
       <a href="{{ post.url | relative_url }}" class="post-card">
-        <div class="post-card__tag">{{ post.category | default: "인사이트" }}</div>
+        <div class="post-card__cat">{{ post.category | default: "인사이트" }}</div>
         <div class="post-card__title">{{ post.title }}</div>
-        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-        <div class="post-card__meta">
-          <span>{{ post.date | date: "%Y.%m.%d" }}</span>
-        </div>
+        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 95 }}</p>
+        <div class="post-card__meta">{{ post.date | date: "%Y.%m.%d" }}</div>
       </a>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ YOUTUBE CTA ═══════════════ -->
-<section class="section section--darker">
+<!-- YOUTUBE + NAVER CTA -->
+<section class="section s-dark2">
   <div class="container">
     <div class="yt-cta">
       <div>
-        <div class="yt-cta__eyebrow">▶ YouTube Channel</div>
+        <div class="yt-cta__eye">▶ YouTube Channel</div>
         <h2 class="yt-cta__title">디지안 월드에서<br>더 많은 콘텐츠를</h2>
-        <p class="yt-cta__desc">
-          영상으로 만나는 부자들의 경제철학. 시장 분석, 투자 인사이트,<br>
-          그리고 경제적 자유를 향한 실전 전략을 유튜브에서 확인하세요.
-        </p>
+        <p class="yt-cta__desc">영상으로 만나는 부자들의 경제철학. 시장 분석, 투자 인사이트,<br>그리고 경제적 자유를 향한 실전 전략을 유튜브에서 확인하세요.</p>
       </div>
-      <a href="{{ site.author.youtube }}" class="yt-cta__btn" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.2c-.3-1-1-1.8-2-2C19.6 4 12 4 12 4S4.4 4 2.5 4.2c-1 .3-1.7 1-2 2C.2 8 0 12 0 12s.2 4 .5 5.8c.3 1 1 1.7 2 2C4.4 20 12 20 12 20s7.6 0 9.5-.2c1-.3 1.7-1 2-2 .3-1.8.5-5.8.5-5.8s-.2-4-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+      <a href="{{ site.author.youtube }}" class="yt-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.2c-.3-1-1-1.8-2-2C19.6 4 12 4 12 4S4.4 4 2.5 4.2c-1 .3-1.7 1-2 2C.2 8 0 12 0 12s.2 4 .5 5.8c.3 1 1 1.7 2 2C4.4 20 12 20 12 20s7.6 0 9.5-.2c1-.3 1.7-1 2-2 .3-1.8.5-5.8.5-5.8s-.2-4-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
         채널 구독하기
       </a>
+    </div>
+    <div class="naver-cta">
+      <div class="naver-cta__icon">📝</div>
+      <div class="naver-cta__text">
+        <h3>네이버 블로그 · argon</h3>
+        <p>글로벌 시장 분석과 경제 인사이트를 네이버 블로그에서도 만나보세요.</p>
+      </div>
+      <a href="{{ site.author.naver }}" class="naver-btn" target="_blank" rel="noopener">블로그 방문</a>
     </div>
   </div>
 </section>

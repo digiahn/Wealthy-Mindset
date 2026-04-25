@@ -4,29 +4,23 @@ title: "성공 습관"
 description: "성공한 사람들의 일상 루틴과 습관 시스템"
 permalink: /success-habits/
 ---
-
-<div style="padding: calc(var(--nav-h) + 4rem) 0 4rem; background: var(--black); border-bottom: 1px solid rgba(201,168,76,0.1);">
+<div style="padding:calc(var(--nav-h) + 4rem) 0 3.5rem;background:var(--black);border-bottom:1px solid rgba(201,168,76,.08);">
   <div class="container">
-    <div class="section__eyebrow" style="justify-content:flex-start; margin-bottom:1rem;">Success Habits</div>
-    <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--ivory);margin-bottom:1rem;">
-      ⚡ 성공 <em style="font-style:italic;color:var(--gold);">습관</em>
-    </h1>
-    <p style="color:var(--text-muted);font-size:1rem;max-width:500px;line-height:1.8;">
-      성공한 사람들의 일상 루틴과 습관 시스템이 어떻게 부를 창출하는지 살펴봅니다.
-    </p>
+    <div class="sec-eye" style="justify-content:flex-start;margin-bottom:.75rem;">Category</div>
+    <h1 style="font-family:var(--font-head);font-size:clamp(2.2rem,5vw,4rem);font-weight:900;color:var(--ivory);margin-bottom:.75rem;">⚡ <em style="font-style:italic;color:var(--gold);">성공 습관</em></h1>
+    <p style="color:var(--text-muted);font-size:.95rem;max-width:500px;line-height:1.85;">성공한 사람들의 일상 루틴과 습관 시스템이 어떻게 부를 창출하는지 살펴봅니다.</p>
   </div>
 </div>
-
-<section class="section section--darker">
+<section class="section s-dark">
   <div class="container">
     <div class="post-grid">
-      {% assign cat_posts = site.posts | where: "category", "성공 습관" %}
-      {% for post in cat_posts %}
+      {% assign posts = site.posts | where: "category", "성공 습관" %}
+      {% for post in posts %}
       <a href="{{ post.url | relative_url }}" class="post-card">
-        <div class="post-card__tag">{{ post.category }}</div>
+        <div class="post-card__cat">{{ post.category }}</div>
         <div class="post-card__title">{{ post.title }}</div>
-        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-        <div class="post-card__meta"><span>{{ post.date | date: "%Y.%m.%d" }}</span></div>
+        <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 95 }}</p>
+        <div class="post-card__meta">{{ post.date | date: "%Y.%m.%d" }}</div>
       </a>
       {% endfor %}
     </div>

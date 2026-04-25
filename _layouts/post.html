@@ -1,23 +1,45 @@
 ---
 layout: default
 ---
-
 <section class="post-hero">
   <div class="post-hero__inner">
-    <div class="post-hero__tag">{{ page.category | default: "인사이트" }}</div>
+    <div class="post-hero__cat">{{ page.category | default: "인사이트" }}</div>
     <h1 class="post-hero__title">{{ page.title }}</h1>
     <div class="post-hero__meta">
-      <span>{{ page.date | date: "%Y년 %m월 %d일" }}</span>
-      <span>·</span>
-      <span>{{ page.author | default: "DigiAHN" }}</span>
-      <span>·</span>
-      <span>읽는 시간 약 {{ content | number_of_words | divided_by: 200 | plus: 1 }}분</span>
+      <span>📅 {{ page.date | date: "%Y년 %m월 %d일" }}</span>
+      <span>✍️ {{ page.author | default: "DigiAHN" }}</span>
+      <span>⏱ 약 {{ content | number_of_words | divided_by: 200 | plus: 1 }}분</span>
+      {% if page.tags %}<span>🏷 {{ page.tags | join: " · " }}</span>{% endif %}
     </div>
   </div>
 </section>
-
-<div class="section--darker">
-  <article class="post-body">
-    {{ content }}
-  </article>
+<div class="s-black">
+  <article class="post-wrap">{{ content }}</article>
 </div>
+{% assign related = site.posts | where: "category", page.category | limit: 3 %}
+{% assign filtered = "" | split: "" %}
+{% for p in related %}
+  {% unless p.url == page.url %}
+    {% assign filtered = filtered | push: p %}
+  {% endunless %}
+{% endfor %}
+{% if filtered.size > 0 %}
+<div class="s-dark2 section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eye">Related Posts</div>
+      <h2 class="sec-title">같은 카테고리의 <em>글</em></h2>
+    </div>
+    <div class="post-grid">
+      {% for p in filtered limit:3 %}
+      <a href="{{ p.url | relative_url }}" class="post-card">
+        <div class="post-card__cat">{{ p.category }}</div>
+        <div class="post-card__title">{{ p.title }}</div>
+        <p class="post-card__excerpt">{{ p.excerpt | strip_html | truncate: 90 }}</p>
+        <div class="post-card__meta">{{ p.date | date: "%Y.%m.%d" }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}

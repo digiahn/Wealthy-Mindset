@@ -1,11 +1,13 @@
 title: "부자들의 경제철학"
-description: "부의 마인드셋과 경제 전략을 탐구하는 전문 플랫폼"
+description: "부의 마인드셋과 경제 전략을 탐구하는 전문 플랫폼. 성공한 부자들의 돈 버는 방법과 경제 철학을 심층 분석합니다."
 baseurl: ""
-url: "https://digiahn.github.io"
+url: "https://wealthy-mindset.netlify.app"
 
 author:
   name: "DigiAHN"
+  fullname: "안희권"
   youtube: "https://www.youtube.com/channel/UCFAWKsm-3cUKvwSoph9vP0g"
+  naver: "https://blog.naver.com/argon"
   github: "https://github.com/digiahn"
 
 markdown: kramdown
@@ -17,6 +19,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 defaults:
   - scope:
       path: ""
@@ -24,6 +30,24 @@ defaults:
     values:
       layout: "post"
       author: "DigiAHN"
+
+categories_list:
+  - name: "부의 전략"
+    slug: "wealth-strategy"
+    icon: "🏛️"
+    desc: "억만장자들의 자산 구축 시스템과 장기 전략"
+  - name: "마인드셋"
+    slug: "mindset"
+    icon: "🧠"
+    desc: "부자와 빈자를 가르는 사고방식의 근본적 차이"
+  - name: "투자철학"
+    slug: "investment"
+    icon: "📈"
+    desc: "세계 최고 투자자들의 원칙과 프레임워크"
+  - name: "성공 습관"
+    slug: "success-habits"
+    icon: "⚡"
+    desc: "성공한 사람들의 일상 루틴과 습관 시스템"
 
 exclude:
   - Gemfile
